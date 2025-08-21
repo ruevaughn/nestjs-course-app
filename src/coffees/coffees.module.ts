@@ -25,7 +25,7 @@ class ProductionConfigService {}
     },
     {
       provide: COFFEE_BRANDS,
-      useValue: ['Buddy Brew', 'Crema', 'Drip IV', 'Green Beans'],
+      useFactory: () => ['Buddy Brew', 'Crema', 'Drip IV', 'Green Beans'],
     },
   ],
   exports: [CoffeesService],
